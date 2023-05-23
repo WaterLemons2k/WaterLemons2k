@@ -5,9 +5,6 @@ I'm WaterLemons2k!
 
 [![Metrics](metrics.svg)](https://github.com/lowlighter/metrics)
 
-[![GitHub stats](https://github-readme-stats.vercel.app/api?username=WaterLemons2k&show_icons=true)
-![Top Langs](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=WaterLemons2k&layout=compact&langs_count=10)
+[![Top Langs](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=WaterLemons2k&layout=compact&langs_count=10)
 ![wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=WaterLemons2k&layout=compact)
 ](https://github.com/anuraghazra/github-readme-stats)
-
-[![GitHub Streak](https://streak-stats.demolab.com/?user=WaterLemons2k)](https://git.io/streak-stats)
