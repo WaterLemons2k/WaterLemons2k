@@ -17,8 +17,8 @@ jobs:
 
       - name: Push
         run: |
-          git config user.name WaterLemons2k
-          git config user.email 62788816+WaterLemons2k@users.noreply.github.com
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           cp /metrics_renders/github-metrics.svg ./metrics.svg
           git add ./metrics.svg
           git commit -m "Update Metrics on $(date +%F)"
