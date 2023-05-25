@@ -2,6 +2,7 @@
 I'm WaterLemons2k!
 
 [![GitHub Profile Views Counter](https://komarev.com/ghpvc/?username=WaterLemons2k)](https://github.com/antonkomarev/github-profile-views-counter)
+[![wakatime](https://wakatime.com/badge/user/4b1ff441-32af-4141-b23e-2b3dfc3677bc.svg)](https://wakatime.com/@WaterLemons2k)
 
 [![Metrics](metrics.svg)](https://github.com/lowlighter/metrics)
 
