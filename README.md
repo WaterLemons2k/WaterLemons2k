@@ -6,6 +6,21 @@ I'm WaterLemons2k!
 
 [![Metrics](metrics.svg)](https://github.com/lowlighter/metrics)
 
-[![Top Langs](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=WaterLemons2k&layout=compact&langs_count=10)
-![wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=WaterLemons2k&layout=compact)
-](https://github.com/anuraghazra/github-readme-stats)
+<!-- https://github.blog/changelog/2022-05-19-specify-theme-context-for-images-in-markdown-beta/ -->
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <picture>
+    <source 
+      srcset="https://github-readme-stats.vercel.app/api/wakatime?username=WaterLemons2k&layout=compact&theme=dark"
+      media="(prefers-color-scheme: dark)"
+    />
+    <img src="https://github-readme-stats.vercel.app/api/wakatime?username=WaterLemons2k&layout=compact" alt="wakatime stats" />
+  </picture>
+
+  <picture>
+    <source
+      srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=WaterLemons2k&layout=compact&langs_count=10&theme=dark"
+      media="(prefers-color-scheme: dark)"
+    />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=WaterLemons2k&layout=compact&langs_count=10" alt="Top Langs" />
+  </picture>
+</a>
