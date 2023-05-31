@@ -23,3 +23,5 @@ jobs:
           git add ./metrics.svg
           git commit -m "Update Metrics at $(date '+%F %T')"
           git push
+        env:
+          TZ: Asia/Shanghai
