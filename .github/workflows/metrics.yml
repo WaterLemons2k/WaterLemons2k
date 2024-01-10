@@ -1,6 +1,7 @@
 name: Metrics
 on:
-  schedule: [{ cron: "*/5 * * * *" }]
+  # Schedule daily updates
+  schedule: [{ cron: '0 0 * * *' }]
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
