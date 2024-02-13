@@ -1,28 +1,21 @@
 name: Metrics
+
 on:
-  # Schedule daily updates
-  schedule: [{ cron: '0 0 * * *' }]
+  # Update Metrics every day
+  schedule:
+    - cron: 0 0 * * *
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
+      - name: Get date
+        id: date
+        run: echo "date=$(date -I)" >> $GITHUB_OUTPUT
+
       - name: Metrics
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          output_action: none
-          config_timezone: Asia/Shanghai
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          ref: metrics
-      - name: Push
-        run: |
-          cp /metrics_renders/github-metrics.svg .
-          git add .
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git commit -m "Update Metrics at $(date '+%F %T')"
-          git push
-        env:
-          TZ: Asia/Shanghai
+          committer_branch: metrics
+          committer_message: Update Metrics on ${{ steps.date.outputs.date }}
