@@ -20,10 +20,10 @@ I'm WaterLemons2k!
 
   <picture>
     <source
-      srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=WaterLemons2k&layout=compact&langs_count=10&theme=dark"
+      srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=WaterLemons2k&layout=compact&theme=dark"
       media="(prefers-color-scheme: dark)"
     />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=WaterLemons2k&layout=compact&langs_count=10" alt="Top Langs" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=WaterLemons2k&layout=compact" alt="Top Langs" />
   </picture>
 </a>
 
