@@ -1,0 +1,54 @@
+name: Update Stats
+
+on:
+  schedule:
+    - cron: 0 0 * * *
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: stats
+
+      - name: Generate wakatime card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&layout=compact
+          path: wakatime.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Generate wakatime card (dark)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&layout=compact&theme=dark
+          path: wakatime-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top-langs card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact
+          path: top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Generate top-langs card (dark)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&theme=dark
+          path: top-langs-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Get date
+        id: date
+        run: echo "date=$(date -I)" >> $GITHUB_OUTPUT
+      - name: Metrics
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_branch: stats
+          committer_message: Update Stats on ${{ steps.date.outputs.date }}
