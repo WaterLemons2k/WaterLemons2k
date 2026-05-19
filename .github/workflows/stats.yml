@@ -16,14 +16,14 @@ jobs:
           ref: stats
 
       - name: Generate wakatime card
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: stats
           options: username=${{ github.repository_owner }}&layout=compact
           path: wakatime.svg
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Generate wakatime card (dark)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: stats
           options: username=${{ github.repository_owner }}&layout=compact&theme=dark
@@ -31,14 +31,14 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate top-langs card
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact
           path: top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Generate top-langs card (dark)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact&theme=dark
