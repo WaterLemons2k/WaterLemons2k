@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">WaterLemons2k's GitHub Stats, Rank: B+</title>
-        <desc id="descId">Total Stars Earned: 50, Total Commits  (last year) : 86, Total PRs: 125, Total Issues: 20, Contributed to (last year): 2</desc>
+        <desc id="descId">Total Stars Earned: 51, Total Commits  (last year) : 86, Total PRs: 125, Total Issues: 20, Contributed to (last year): 2</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 107.99910862112753;
+        stroke-dashoffset: 107.58437691768334;
       }
     }
   
@@ -158,7 +158,7 @@
         x="204.01"
         y="12.5"
         data-testid="stars"
-      >50</text>
+      >51</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
